@@ -1,5 +1,5 @@
 import MessengerCustomerChat from "react-messenger-customer-chat";
-function chat() {
+function Chat() {
   return (
     <section>
     <MessengerCustomerChat
@@ -12,4 +12,4 @@ function chat() {
   );
 }
 
-export default chat;
+export default Chat;

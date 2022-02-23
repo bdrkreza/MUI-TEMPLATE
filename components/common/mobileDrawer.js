@@ -2,8 +2,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton, SwipeableDrawer } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import { Link as ScrollLink } from 'react-scroll';
 import { menuItem } from "./menuItem";
+
 
 function MobileDrawer() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -26,7 +26,7 @@ function MobileDrawer() {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItem.map(({ path, label }, i) => (
-              <ScrollLink
+              <Box
               activeClass="active"
               to={path}
               spy={true}
@@ -36,7 +36,7 @@ function MobileDrawer() {
               key={i}
             >
               {label}
-            </ScrollLink>
+            </Box>
           ))}
           </Box>
         </Box>

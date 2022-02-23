@@ -1,3 +1,4 @@
+import Chat from "../components/chat/chat";
 import {
   Banner,
   BoostAgencies,
@@ -42,6 +43,7 @@ export default function Home() {
         <section id="CALL_ACTION">
           <CallToAction />
         </section>
+        <Chat/>
       </Layout>
     </>
   );

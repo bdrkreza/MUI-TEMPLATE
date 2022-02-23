@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Image from "next/image";
-import Typist from "react-typist";
 import bannerImg from "../../assets/banner-image-1-1.png";
 
 const content = {
@@ -32,16 +31,9 @@ export default function AboutMe() {
                 Us
               </span>
             </Typography>
-            <Typography>
-              <Typist>{content.title1}</Typist>
-            </Typography>
+            <Typography>{content.title1}</Typography>
             <Typography sx={{ display: "flex" }}>
               <Typography mr={2}>Freelance</Typography>
-              <Typist>
-                <span style={{ marginLeft: "10px" }}> graphics Design </span>
-                <Typist.Backspace count={8} delay={200} />
-                <span>Logo</span>
-              </Typist>
             </Typography>
             <Typography
               sx={{
@@ -65,13 +57,11 @@ export default function AboutMe() {
                 p: 3,
               }}
             >
-              <Typist>
-                I love to work in User Experience & User Interface designing.
-                Because I love to solve the design problem and find easy and
-                better solutions to solve it. I always try my best to make good
-                user interface with the best user experience. I have been
-                working as a Visual designer from 6.5 years.
-              </Typist>
+              I love to work in User Experience & User Interface designing.
+              Because I love to solve the design problem and find easy and
+              better solutions to solve it. I always try my best to make good
+              user interface with the best user experience. I have been working
+              as a Visual designer from 6.5 years.
             </Typography>
           </Paper>
         </Grid>
