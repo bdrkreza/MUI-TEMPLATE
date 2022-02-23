@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Container } from "@mui/material";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Footer from "../common/footer/footer";
@@ -39,14 +39,14 @@ function Layout({ children }) {
         <title>rkreza</title>
       </Head>
       <Navbar darkTheme={darkTheme} handleToggle={handleToggle} />
-      <Box
+      <Container maxWidth="lg"
         sx={{
           minHeight: "600px",
-          p: 10,
+          py: 9,
         }}
       >
         {children}
-      </Box>
+      </Container>
       <Footer />
     </>
   );

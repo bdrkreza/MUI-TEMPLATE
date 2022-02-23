@@ -1,9 +1,10 @@
 import Layout from "../components/layout/Layout";
+import PricingSection from "../components/pricing/pricingSection";
 
 export default function Pricing() {
   return (
     <Layout>
-        <h1>Pricing</h1>
+      <PricingSection />
     </Layout>
-  )
+  );
 }

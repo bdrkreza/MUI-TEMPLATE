@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Image from "next/image";
-import logo from "../../assets/boost-1-1.png";
+import logo from "../../assets/boost-1.png";
 
 const data = {
   title: "Boost your agencies by choosing Ninja Developers",

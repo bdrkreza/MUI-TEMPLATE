@@ -1,5 +1,5 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Button, Container, Link, Stack, Typography } from "@mui/material";
+import { Button, Container, Link, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -54,9 +54,9 @@ function AboutSection() {
                 UX, UI Designer.
               </Typography>
             </Item>
-            <Stack spacing={4} sx={classes.stack}>
+            {/* <Stack spacing={4} sx={classes.stack}>
               <Item sx={classes.listTitle}>{data.description}</Item>
-            </Stack>
+            </Stack> */}
             <Link to="/" sx={{ textDecoration: "none" }}>
               <Button sx={classes.button} variant="outlined">
                 Learn more <ArrowForwardIcon />

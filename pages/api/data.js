@@ -14,6 +14,9 @@ import img3 from "../../assets/icons/theming-card.png";
 import image1 from "../../assets/partner-1-1.png";
 import image2 from "../../assets/partner-1-2.png";
 import image3 from "../../assets/partner-1-3.png";
+import img24 from "../../assets/project/architecture1.png";
+import img25 from "../../assets/project/dashboard_admin.png";
+import img26 from "../../assets/project/to-do-list.png";
 import featureImage1 from "../../assets/tutorial-1-1.png";
 import featureImage2 from "../../assets/tutorial-1-2.png";
 import featureImage3 from "../../assets/tutorial-1-3.png";
@@ -201,22 +204,43 @@ export const category = [
   },
   {
     id: 2,
-    name:"branding",
+    name: "branding",
     category: "branding",
   },
   {
     id: 3,
-    name:"logo",
+    name: "logo",
     category: "logo",
   },
   {
     id: 4,
-    name:"ui/ux",
+    name: "ui/ux",
     category: "ui/ux",
   },
   {
     id: 5,
-    name:"web design",
+    name: "web design",
     category: "web Design",
+  },
+];
+
+export const projectData = [
+  {
+    image: img24,
+    author: "mobile app, ios app",
+    title: "To do task List app",
+    desc: "I made nine prototypes to understand family needs better and redesigned the ios and android apps",
+  },
+  {
+    image: img25,
+    author: "mobile app, ios app",
+    title: "To do task List app",
+    desc: "I made nine prototypes to understand family needs better and redesigned the ios and android apps",
+  },
+  {
+    image: img26,
+    author: "mobile app, ios app",
+    title: "To do task List app",
+    desc: "I made nine prototypes to understand family needs better and redesigned the ios and android apps",
   },
 ];
