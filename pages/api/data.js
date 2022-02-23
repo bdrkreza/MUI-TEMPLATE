@@ -192,3 +192,31 @@ export const awardData = [
     image: img23,
   },
 ];
+
+export const category = [
+  {
+    id: 1,
+    name: "all",
+    category: "all",
+  },
+  {
+    id: 2,
+    name:"branding",
+    category: "branding",
+  },
+  {
+    id: 3,
+    name:"logo",
+    category: "logo",
+  },
+  {
+    id: 4,
+    name:"ui/ux",
+    category: "ui/ux",
+  },
+  {
+    id: 5,
+    name:"web design",
+    category: "web Design",
+  },
+];

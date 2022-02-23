@@ -4,10 +4,7 @@ import { AppBar, Container, Divider, Tabs, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import * as React from "react";
-import AllProject from "./AllProject";
-import BrandingProject from "./BrandingProject";
-import LogoProject from "./LogoProject";
-import WebDesignProject from "./WebDesignProject";
+import { category } from "../../../pages/api/data";
 const data = {
   header_title: "My work",
   header_desc:
@@ -44,26 +41,24 @@ export default function ProjectTabs() {
                   variant="fullWidth"
                   aria-label="full width tabs example"
                 >
-                  <Tab label="All" value="1" />
-                  <Tab label="Branding" value="2" />
-                  <Tab label="Logo" value="3" />
-                  <Tab label="UI/UX" value="4" />
-                  <Tab label="Web Design" value="5" />
+                  {category.map((category) => (
+                    <Tab
+                      label={category.name}
+                      key={category.id}
+                      value={category.id}
+                    />
+                  ))}
                 </Tabs>
               </AppBar>
             </Box>
+            {category.map((category) => (
+              <TabPanel value={category.id} key={category.id}>
+                <h1>{category.name}</h1>
+              </TabPanel>
+            ))}
+
             <TabPanel value="1">
-              <AllProject />
-            </TabPanel>
-            <TabPanel value="2">
-              <BrandingProject />
-            </TabPanel>
-            <TabPanel value="3">
-              <LogoProject />
-            </TabPanel>
-            <TabPanel value="4">UI/UX</TabPanel>
-            <TabPanel value="5">
-              <WebDesignProject />
+              <h1>h</h1>
             </TabPanel>
           </TabContext>
         </Box>

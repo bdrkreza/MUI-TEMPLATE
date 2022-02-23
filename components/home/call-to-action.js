@@ -5,7 +5,7 @@ import btnShape from "../../assets/cta-btn-shape-1.svg";
 import BgShape from "../../assets/cta-shape-1.svg";
 function CallToAction() {
   return (
-    <Container sx={{mt:15}}>
+    <Container sx={{ mt: 5 }}>
       <Box sx={classes.wrapper}>
         <Container maxWidth="xl">
           <Paper>
@@ -29,15 +29,11 @@ function CallToAction() {
 export default CallToAction;
 
 const classes = {
-  wrapper: {
-
-  },
-
   inner: {
     padding: "45px 30px 50px",
-    mt: "-80px",
+
     position: "relative",
-    zIndex: "10",
+    zIndex: "0",
     backgroundColor: "var(--color-secondary)",
     borderRadius: "10px",
     display: "flex",

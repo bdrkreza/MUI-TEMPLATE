@@ -15,8 +15,8 @@ import {
   Link,
   Typography
 } from "@mui/material";
-import Logo from "./brandLogo";
-import { menuItem } from "./menuItem";
+import Logo from "../brandLogo";
+import { menuItem } from "../menuItem";
 
 export default function ExtraFooter(props) {
   const content = {

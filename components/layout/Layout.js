@@ -2,8 +2,9 @@ import { Box } from "@mui/material";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import classes from "../../styles/styles";
-import Footer from "../common/footer";
+import Footer from "../common/footer/footer";
 import Navbar from "../common/navbar";
+
 
 
 function Layout({ children }) {
