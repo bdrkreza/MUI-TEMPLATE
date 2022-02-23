@@ -18,8 +18,8 @@ export default function TopTabs() {
   };
 
   return (
-    <section>
-      <Container maxWidth="xl">
+    <>
+      <Container maxWidth="xl" sx={{ backgroundColor: "var(--color-section)" }}>
         <Box sx={classes.rootBox}>
           <TabContext value={value}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -59,15 +59,13 @@ export default function TopTabs() {
           </TabContext>
         </Box>
       </Container>
-    </section>
+    </>
   );
 }
 
 const classes = {
   rootBox: {
     width: "100%",
-    backgroundColor: "var(--color-section)",
-    typography: "body1",
   },
   appBar: {
     backgroundColor: "var(--color-primary)",

@@ -40,9 +40,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function BoostAgencies() {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" sx={{backgroundColor: "var(--color-section)" }}>
       <hr style={classes.hr} />
-      <Box sx={{ flexGrow: 1, backgroundColor: "var(--color-section)" }}>
+      <Box sx={{ flexGrow: 1, }}>
         <Grid container spacing={2} columns={12}>
           <Grid item xs={12} md={12} lg={7}>
             <Item sx={{ backgroundColor: "var(--color-cart)" }}>

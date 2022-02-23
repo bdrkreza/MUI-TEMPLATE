@@ -1,11 +1,8 @@
 import { Box } from "@mui/material";
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import classes from "../../styles/styles";
 import Footer from "../common/footer/footer";
 import Navbar from "../common/navbar";
-
-
 
 function Layout({ children }) {
   const [darkTheme, setDarkTheme] = useState(undefined);
@@ -42,7 +39,14 @@ function Layout({ children }) {
         <title>rkreza</title>
       </Head>
       <Navbar darkTheme={darkTheme} handleToggle={handleToggle} />
-      <Box sx={classes.main}>{children}</Box>
+      <Box
+        sx={{
+          minHeight: "600px",
+          p: 10,
+        }}
+      >
+        {children}
+      </Box>
       <Footer />
     </>
   );

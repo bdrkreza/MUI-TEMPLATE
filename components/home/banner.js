@@ -6,61 +6,59 @@ import { bannerData } from "../../pages/api/data";
 function Banner() {
   return (
     <>
-      <Box sx={classes.banner}>
-        <Container maxWidth="xl">
-          <Grid container spacing={2}>
-            <Box sx={classes.rootBox}>
-              <Grid item xs={12} md={6} xl={6}>
-                <Box>
-                  <Typography sx={classes.title}>
-                    Great software is built with amazing developers
-                  </Typography>
-                  <Typography sx={classes.paragraph}>
-                    We help build and manage a team of world-class developers
-                    <br /> to bring your vision to life
-                  </Typography>
-                  <Box sx={classes.form}>
-                    <Input
-                      sx={classes.form.input}
-                      name="subscribe"
-                      id="subscribe"
-                      placeholder="Subscribe newsletter"
-                    />
-                    <button
-                      type="submit"
-                      sx={classes.form.button}
-                      style={{ color: "var(--color-button-text)" }}
-                    >
-                      Subscribe
-                    </button>
-                  </Box>
-                  <Box sx={classes.partner}>
-                    <Typography component="span">Sponsored by:</Typography>
-                    <Box sx={classes.partner.box}>
-                      {bannerData.brand.map((img, index) => (
-                        <Box key={index} sx={{ ml: 2 }}>
-                          <Image
-                            loading="lazy"
-                            src={img.img}
-                            width="100"
-                            height="28"
-                            alt=""
-                          />
-                        </Box>
-                      ))}
-                    </Box>
+      <Container maxWidth="xl" sx={classes.banner}>
+        <Grid container spacing={2}>
+          <Box sx={classes.rootBox}>
+            <Grid item xs={12} md={6} xl={6}>
+              <Box>
+                <Typography sx={classes.title}>
+                  Great software is built with amazing developers
+                </Typography>
+                <Typography sx={classes.paragraph}>
+                  We help build and manage a team of world-class developers
+                  <br /> to bring your vision to life
+                </Typography>
+                <Box sx={classes.form}>
+                  <Input
+                    sx={classes.form.input}
+                    name="subscribe"
+                    id="subscribe"
+                    placeholder="Subscribe newsletter"
+                  />
+                  <button
+                    type="submit"
+                    sx={classes.form.button}
+                    style={{ color: "var(--color-button-text)" }}
+                  >
+                    Subscribe
+                  </button>
+                </Box>
+                <Box sx={classes.partner}>
+                  <Typography component="span">Sponsored by:</Typography>
+                  <Box sx={classes.partner.box}>
+                    {bannerData.brand.map((img, index) => (
+                      <Box key={index} sx={{ ml: 2 }}>
+                        <Image
+                          loading="lazy"
+                          src={img.img}
+                          width="100"
+                          height="28"
+                          alt=""
+                        />
+                      </Box>
+                    ))}
                   </Box>
                 </Box>
-              </Grid>
-              <Grid item xs={12} md={6} xl={6}>
-                <Box sx={classes.image}>
-                  <Image src={bannerImg} height={900} alt="" />
-                </Box>
-              </Grid>
-            </Box>
-          </Grid>
-        </Container>
-      </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6} xl={6}>
+              <Box sx={classes.image}>
+                <Image src={bannerImg} height={900} alt="" />
+              </Box>
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
     </>
   );
 }
@@ -69,8 +67,6 @@ export default Banner;
 
 const classes = {
   banner: {
-    mt:5,
-    py: 7,
     backgroundColor: "var(--color-section)",
     overflow: "hidden",
   },
