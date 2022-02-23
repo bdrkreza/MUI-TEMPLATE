@@ -1,8 +1,8 @@
-import { Button, Container, Paper, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Button, Container, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import btnShape from "../../assets/cta-btn-shape-1.svg";
 import BgShape from "../../assets/cta-shape-1.svg";
+
 function CallToAction() {
   return (
     <Container sx={{ mt: 5 }}>

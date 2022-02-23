@@ -1,7 +1,7 @@
-import { Container, Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { FeatureData } from "../../pages/api/data";
 import FeatureCard from "./Feature_card";
+
 
 const data = {
   header_title: "Quality features",

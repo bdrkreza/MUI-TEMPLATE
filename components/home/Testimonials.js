@@ -1,10 +1,10 @@
-import { Card, Container, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Card, Container, Typography } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 import SwiperCore, { Autoplay, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialData } from "../../pages/api/data";
+
 const data = {
   header_title: "Customer Comments",
   header_desc: "Why customers love us",
