@@ -3,11 +3,10 @@ function Chat() {
   return (
     <section>
     <MessengerCustomerChat
-          pageId="1464345027212684"
-          appId="739503123600537"
-          htmlRef="<REF_STRING>"
+          pageId="106233291300205"
+          appId="650328786052556"
         />
-        <h1>chat</h1>
+ 
     </section>
   );
 }
